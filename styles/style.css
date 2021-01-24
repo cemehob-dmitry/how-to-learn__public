@@ -227,6 +227,12 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  width: 200px;
+  margin: 80px 0 0;
+  text-align: start;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .kaufman {
@@ -269,15 +275,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-}
-
-.table__cell_theme_dark {
-  width: 200px;
-  margin: 80px 0 0;
-  text-align: start;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
 }
 
 .cell__text_theme_dark {
