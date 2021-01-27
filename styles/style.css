@@ -22,7 +22,7 @@
 }
 
 .logo {
-  width: 183px;/*это я от отчаяния*/
+  width: 183px;
 }
 
 .logo_place_header {
@@ -238,11 +238,12 @@
 .section-title_theme_dark {
   position: relative;
   z-index: 1;
+  color: white;
 }
-/*в этих классах вроде как больше нет необходимости. надо ли их удалять в html коде?*/
-/*.section-subtitle_theme_dark {
 
-}*/
+.section-subtitle_theme_dark {
+  color: white;
+}
 
 .table_theme_dark {
   position: relative;
@@ -251,7 +252,6 @@
 
 .table__cell_theme_dark {
   width: 200px;
-  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -331,7 +331,6 @@
   font-size: 18px;
   font-weight: 600;
 }
-
 .footer__column-links {
   margin: 0 0 16px;
   padding: 0;
