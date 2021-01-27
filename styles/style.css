@@ -21,8 +21,11 @@
   padding: 30px 64px;
 }
 
+.logo {
+  width: 183px;/*это я от отчаяния*/
+}
+
 .logo_place_header {
-  width: 183px;
   height: 32px;
   position: absolute;
   top: 30px;
@@ -74,13 +77,16 @@
   z-index: 1;
 }
 
+.description {
+  padding-top: 100px;
+}
+
 .two-columns {
   width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 100px;
 }
 
 .two-columns__brief {
@@ -107,7 +113,7 @@
   margin: 0;
 }
 
-.two-columns__paragraph_span {
+.two-columns__paragraph:nth-child(2) {
   margin: 30px 0;
 }
 
@@ -153,7 +159,7 @@
 }
 
 .table__cell {
-  width: 250px; /* с max-width не очень получается. некоторые ячейки становятся уже, и получается некрасиво;*/
+  width: 250px;
   margin: 60px 0 0;
   text-align: start;
 }
@@ -162,7 +168,7 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  margin: 60px 0 0;
+  margin: 0;
 }
 
 .table__text {
@@ -229,62 +235,36 @@
   color: white;
 }
 
-.section-title_theme-dark {
-  width: 60%;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
+.section-title_theme_dark {
+  position: relative;
+  z-index: 1;
+}
+/*в этих классах вроде как больше нет необходимости. надо ли их удалять в html коде?*/
+/*.section-subtitle_theme_dark {
+
+}*/
+
+.table_theme_dark {
   position: relative;
   z-index: 1;
 }
 
-.section-subtitle_theme-dark {
-  width: 60%;
-  margin: 20px auto 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
-}
-
-.table_theme-dark {
-  list-style: none;
-  width: 1100px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
-}
-
-.table__cell_theme-dark {
+.table__cell_theme_dark {
   width: 200px;
-  color: white;
   margin: 0;
-  text-align: start;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.table__heading_theme-dark {
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
   margin: 80px 0 0;
 }
 
-.table__text_theme-dark {
-  margin: 20px 0 0;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
+/*.table__heading_theme_dark {
+
+}*/
+
+/*.table__text_theme_dark {
+
+}*/
 
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
@@ -313,17 +293,19 @@
   justify-content: space-between;
 }
 
-.footer__columns_column-copyright {
-  flex-basis: 711px;
-  justify-content: space-between;
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_copyright {
+  flex-basis: 711px;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
 .logo_place_footer {
   height: 35px;
-  width: 183px;
   display: flex;
 }
 
@@ -335,16 +317,19 @@
   font-weight: normal;
 }
 
-.footer__columns_column-info {
-  display: flex;
-  flex-direction: column;
-}
+/*.footer__column_info {
+
+}*/
+
+/*.footer__column_social {
+
+}*/
 
 .footer__column-heading {
   margin: 0 0 20px;
   line-height: 30px;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .footer__column-links {
