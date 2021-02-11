@@ -8,4 +8,5 @@
   background-color: #f2f2f2;
   padding: 30px 64px;
   z-index: 2;
+  overflow: hidden;
 }
