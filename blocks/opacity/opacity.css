@@ -1,13 +1,9 @@
-@keyframes link-opacity {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0.4;
-  }
+.opacity {
+  opacity: 1;
 }
 
 .opacity:hover {
-  animation: link-opacity .5s linear 1 both;
+  /*animation: link-opacity .5s linear 1 both;*/
+  opacity: 0.4;
+  transition: opacity .5s linear;
 }

@@ -1,10 +1,13 @@
 .video__iframe {
   width: 515px;
   height: 316px;
+  border: 0;
  }
 
 .video__iframe:first-of-type {
- margin-right: 20px;
- width: 515px;
- height: 316px;
+ margin-right: 10px;
 }
+
+.video__iframe:nth-of-type(2) {
+  margin-left: 10px;
+ }
